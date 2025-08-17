@@ -1,1 +1,13 @@
 name: Print file content CI/CD
+
+on: [push]
+
+jobs:
+  print-file-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print hello_world.txt content
+        run: cat hello_world.txt
