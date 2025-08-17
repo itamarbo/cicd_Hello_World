@@ -6,7 +6,7 @@ jobs:
   print-file-content:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository fir Itamar
+      - name: Checkout repository for Itamar
         uses: actions/checkout@v4
 
       - name: Print hello_world.txt content
